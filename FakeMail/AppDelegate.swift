@@ -12,6 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 	@IBOutlet var window: NSWindow!
 
+	@IBOutlet var mailViewController: MailViewController!
 
 	func applicationDidFinishLaunching(_ aNotification: Notification) {
 		// Insert code here to initialize your application

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FA4DC4E254A061E00A2E734 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4DC4D254A061E00A2E734 /* MailViewController.swift */; };
+		9FA4DC5D254A065800A2E734 /* DefaultMailPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */; };
+		9FA4DC62254A084000A2E734 /* MailTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4DC61254A084000A2E734 /* MailTableCellView.xib */; };
+		9FA4DC67254A097D00A2E734 /* MailTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4DC66254A097D00A2E734 /* MailTableCellView.swift */; };
+		9FA4DC70254A16F700A2E734 /* guidoMail.html in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4DC6F254A16F700A2E734 /* guidoMail.html */; };
+		9FA4DC78254A1C2B00A2E734 /* guidoMail2.html in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4DC77254A1C2B00A2E734 /* guidoMail2.html */; };
+		9FA4DC90254A20DE00A2E734 /* peterMail.html in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4DC8F254A20DE00A2E734 /* peterMail.html */; };
 		9FCC59802549F33F0081E5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC597F2549F33F0081E5F8 /* AppDelegate.swift */; };
 		9FCC59822549F3420081E5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC59812549F3420081E5F8 /* Assets.xcassets */; };
 		9FCC59852549F3420081E5F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC59832549F3420081E5F8 /* MainMenu.xib */; };
@@ -32,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FA4DC4D254A061E00A2E734 /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+		9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultMailPosts.swift; path = FakeMail/DefaultMailPosts.swift; sourceTree = SOURCE_ROOT; };
+		9FA4DC61254A084000A2E734 /* MailTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailTableCellView.xib; sourceTree = "<group>"; };
+		9FA4DC66254A097D00A2E734 /* MailTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTableCellView.swift; sourceTree = "<group>"; };
+		9FA4DC6F254A16F700A2E734 /* guidoMail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = guidoMail.html; sourceTree = "<group>"; };
+		9FA4DC77254A1C2B00A2E734 /* guidoMail2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = guidoMail2.html; sourceTree = "<group>"; };
+		9FA4DC8F254A20DE00A2E734 /* peterMail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = peterMail.html; sourceTree = "<group>"; };
 		9FCC597C2549F33F0081E5F8 /* FakeMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC597F2549F33F0081E5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FCC59812549F3420081E5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FA4DC6E254A163900A2E734 /* MailContent */ = {
+			isa = PBXGroup;
+			children = (
+				9FA4DC6F254A16F700A2E734 /* guidoMail.html */,
+				9FA4DC77254A1C2B00A2E734 /* guidoMail2.html */,
+				9FA4DC8F254A20DE00A2E734 /* peterMail.html */,
+			);
+			path = MailContent;
+			sourceTree = "<group>";
+		};
 		9FCC59732549F33F0081E5F8 = {
 			isa = PBXGroup;
 			children = (
+				9FA4DC6E254A163900A2E734 /* MailContent */,
 				9FCC597E2549F33F0081E5F8 /* FakeMail */,
 				9FCC598F2549F3430081E5F8 /* FakeMailTests */,
 				9FCC599A2549F3430081E5F8 /* FakeMailUITests */,
@@ -99,6 +124,10 @@
 				9FCC59832549F3420081E5F8 /* MainMenu.xib */,
 				9FCC59862549F3420081E5F8 /* Info.plist */,
 				9FCC59872549F3420081E5F8 /* FakeMail.entitlements */,
+				9FA4DC4D254A061E00A2E734 /* MailViewController.swift */,
+				9FA4DC61254A084000A2E734 /* MailTableCellView.xib */,
+				9FA4DC66254A097D00A2E734 /* MailTableCellView.swift */,
+				9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */,
 			);
 			path = FakeMail;
 			sourceTree = "<group>";
@@ -224,7 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA4DC70254A16F700A2E734 /* guidoMail.html in Resources */,
 				9FCC59822549F3420081E5F8 /* Assets.xcassets in Resources */,
+				9FA4DC90254A20DE00A2E734 /* peterMail.html in Resources */,
+				9FA4DC62254A084000A2E734 /* MailTableCellView.xib in Resources */,
+				9FA4DC78254A1C2B00A2E734 /* guidoMail2.html in Resources */,
 				9FCC59852549F3420081E5F8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA4DC67254A097D00A2E734 /* MailTableCellView.swift in Sources */,
+				9FA4DC5D254A065800A2E734 /* DefaultMailPosts.swift in Sources */,
 				9FCC59802549F33F0081E5F8 /* AppDelegate.swift in Sources */,
+				9FA4DC4E254A061E00A2E734 /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +463,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -448,6 +485,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
