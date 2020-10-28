@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FCC59802549F33F0081E5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC597F2549F33F0081E5F8 /* AppDelegate.swift */; };
+		9FCC59822549F3420081E5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC59812549F3420081E5F8 /* Assets.xcassets */; };
+		9FCC59852549F3420081E5F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC59832549F3420081E5F8 /* MainMenu.xib */; };
+		9FCC59912549F3430081E5F8 /* FakeMailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC59902549F3430081E5F8 /* FakeMailTests.swift */; };
+		9FCC599C2549F3430081E5F8 /* FakeMailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC599B2549F3430081E5F8 /* FakeMailUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FCC598D2549F3430081E5F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FCC59742549F33F0081E5F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCC597B2549F33F0081E5F8;
+			remoteInfo = FakeMail;
+		};
+		9FCC59982549F3430081E5F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FCC59742549F33F0081E5F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCC597B2549F33F0081E5F8;
+			remoteInfo = FakeMail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FCC597C2549F33F0081E5F8 /* FakeMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCC597F2549F33F0081E5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FCC59812549F3420081E5F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FCC59842549F3420081E5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9FCC59862549F3420081E5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCC59872549F3420081E5F8 /* FakeMail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FakeMail.entitlements; sourceTree = "<group>"; };
+		9FCC598C2549F3430081E5F8 /* FakeMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCC59902549F3430081E5F8 /* FakeMailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMailTests.swift; sourceTree = "<group>"; };
+		9FCC59922549F3430081E5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCC59972549F3430081E5F8 /* FakeMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCC599B2549F3430081E5F8 /* FakeMailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMailUITests.swift; sourceTree = "<group>"; };
+		9FCC599D2549F3430081E5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FCC59792549F33F0081E5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC59892549F3430081E5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC59942549F3430081E5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FCC59732549F33F0081E5F8 = {
+			isa = PBXGroup;
+			children = (
+				9FCC597E2549F33F0081E5F8 /* FakeMail */,
+				9FCC598F2549F3430081E5F8 /* FakeMailTests */,
+				9FCC599A2549F3430081E5F8 /* FakeMailUITests */,
+				9FCC597D2549F33F0081E5F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FCC597D2549F33F0081E5F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC597C2549F33F0081E5F8 /* FakeMail.app */,
+				9FCC598C2549F3430081E5F8 /* FakeMailTests.xctest */,
+				9FCC59972549F3430081E5F8 /* FakeMailUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCC597E2549F33F0081E5F8 /* FakeMail */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC597F2549F33F0081E5F8 /* AppDelegate.swift */,
+				9FCC59812549F3420081E5F8 /* Assets.xcassets */,
+				9FCC59832549F3420081E5F8 /* MainMenu.xib */,
+				9FCC59862549F3420081E5F8 /* Info.plist */,
+				9FCC59872549F3420081E5F8 /* FakeMail.entitlements */,
+			);
+			path = FakeMail;
+			sourceTree = "<group>";
+		};
+		9FCC598F2549F3430081E5F8 /* FakeMailTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC59902549F3430081E5F8 /* FakeMailTests.swift */,
+				9FCC59922549F3430081E5F8 /* Info.plist */,
+			);
+			path = FakeMailTests;
+			sourceTree = "<group>";
+		};
+		9FCC599A2549F3430081E5F8 /* FakeMailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FCC599B2549F3430081E5F8 /* FakeMailUITests.swift */,
+				9FCC599D2549F3430081E5F8 /* Info.plist */,
+			);
+			path = FakeMailUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FCC597B2549F33F0081E5F8 /* FakeMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCC59A02549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMail" */;
+			buildPhases = (
+				9FCC59782549F33F0081E5F8 /* Sources */,
+				9FCC59792549F33F0081E5F8 /* Frameworks */,
+				9FCC597A2549F33F0081E5F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FakeMail;
+			productName = FakeMail;
+			productReference = 9FCC597C2549F33F0081E5F8 /* FakeMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FCC598B2549F3430081E5F8 /* FakeMailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCC59A32549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMailTests" */;
+			buildPhases = (
+				9FCC59882549F3430081E5F8 /* Sources */,
+				9FCC59892549F3430081E5F8 /* Frameworks */,
+				9FCC598A2549F3430081E5F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCC598E2549F3430081E5F8 /* PBXTargetDependency */,
+			);
+			name = FakeMailTests;
+			productName = FakeMailTests;
+			productReference = 9FCC598C2549F3430081E5F8 /* FakeMailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FCC59962549F3430081E5F8 /* FakeMailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCC59A62549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMailUITests" */;
+			buildPhases = (
+				9FCC59932549F3430081E5F8 /* Sources */,
+				9FCC59942549F3430081E5F8 /* Frameworks */,
+				9FCC59952549F3430081E5F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCC59992549F3430081E5F8 /* PBXTargetDependency */,
+			);
+			name = FakeMailUITests;
+			productName = FakeMailUITests;
+			productReference = 9FCC59972549F3430081E5F8 /* FakeMailUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FCC59742549F33F0081E5F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9FCC597B2549F33F0081E5F8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					9FCC598B2549F3430081E5F8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9FCC597B2549F33F0081E5F8;
+					};
+					9FCC59962549F3430081E5F8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 9FCC597B2549F33F0081E5F8;
+					};
+				};
+			};
+			buildConfigurationList = 9FCC59772549F33F0081E5F8 /* Build configuration list for PBXProject "FakeMail" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FCC59732549F33F0081E5F8;
+			productRefGroup = 9FCC597D2549F33F0081E5F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FCC597B2549F33F0081E5F8 /* FakeMail */,
+				9FCC598B2549F3430081E5F8 /* FakeMailTests */,
+				9FCC59962549F3430081E5F8 /* FakeMailUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCC597A2549F33F0081E5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC59822549F3420081E5F8 /* Assets.xcassets in Resources */,
+				9FCC59852549F3420081E5F8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC598A2549F3430081E5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC59952549F3430081E5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FCC59782549F33F0081E5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC59802549F33F0081E5F8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC59882549F3430081E5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC59912549F3430081E5F8 /* FakeMailTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCC59932549F3430081E5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCC599C2549F3430081E5F8 /* FakeMailUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FCC598E2549F3430081E5F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCC597B2549F33F0081E5F8 /* FakeMail */;
+			targetProxy = 9FCC598D2549F3430081E5F8 /* PBXContainerItemProxy */;
+		};
+		9FCC59992549F3430081E5F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCC597B2549F33F0081E5F8 /* FakeMail */;
+			targetProxy = 9FCC59982549F3430081E5F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FCC59832549F3420081E5F8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FCC59842549F3420081E5F8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FCC599E2549F3430081E5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FCC599F2549F3430081E5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9FCC59A12549F3430081E5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FakeMail/FakeMail.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FakeMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9FCC59A22549F3430081E5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FakeMail/FakeMail.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = FakeMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9FCC59A42549F3430081E5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				INFOPLIST_FILE = FakeMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FakeMail.app/Contents/MacOS/FakeMail";
+			};
+			name = Debug;
+		};
+		9FCC59A52549F3430081E5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				INFOPLIST_FILE = FakeMailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMailTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FakeMail.app/Contents/MacOS/FakeMail";
+			};
+			name = Release;
+		};
+		9FCC59A72549F3430081E5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				INFOPLIST_FILE = FakeMailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FakeMail;
+			};
+			name = Debug;
+		};
+		9FCC59A82549F3430081E5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XPVUL23A2V;
+				INFOPLIST_FILE = FakeMailUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMailUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FakeMail;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FCC59772549F33F0081E5F8 /* Build configuration list for PBXProject "FakeMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCC599E2549F3430081E5F8 /* Debug */,
+				9FCC599F2549F3430081E5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCC59A02549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCC59A12549F3430081E5F8 /* Debug */,
+				9FCC59A22549F3430081E5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCC59A32549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCC59A42549F3430081E5F8 /* Debug */,
+				9FCC59A52549F3430081E5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCC59A62549F3430081E5F8 /* Build configuration list for PBXNativeTarget "FakeMailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCC59A72549F3430081E5F8 /* Debug */,
+				9FCC59A82549F3430081E5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FCC59742549F33F0081E5F8 /* Project object */;
+}
