@@ -6,11 +6,12 @@
       "scale" : "1x"
     },
     {
-      "filename" : "topBar.png",
+      "filename" : "topBar@2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "topBar@3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
