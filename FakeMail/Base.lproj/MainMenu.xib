@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="17506"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,10 +23,12 @@
         </customObject>
         <arrayController id="Ww5-90-yUv"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="OQJ-ml-tu8" customClass="FirstResponderD" customModule="FakeMail" customModuleProvider="target"/>
         <customObject id="dyB-DO-ksf" customClass="MailViewController" customModule="FakeMail" customModuleProvider="target">
             <connections>
                 <outlet property="mailContentView" destination="flz-3G-I1w" id="doT-rD-icg"/>
                 <outlet property="mailTableView" destination="bov-C5-Dct" id="lG7-ON-haT"/>
+                <outlet property="mailWindow" destination="QvC-M9-y7g" id="DQk-Mg-SDT"/>
                 <outlet property="view" destination="EiT-Mj-1SZ" id="gsg-tU-Bhe"/>
             </connections>
         </customObject>
@@ -180,7 +183,8 @@
                                     <action selector="delete:" target="-1" id="0Mk-Ml-PaM"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Select All" keyEquivalent="a" id="Ruw-6m-B2m">
+                            <menuItem title="Select All" id="Ruw-6m-B2m">
+                                <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="selectAll:" target="-1" id="VNm-Mi-diN"/>
                                 </connections>
@@ -655,9 +659,14 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
                         <items>
-                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                            <menuItem title="Minimize" keyEquivalent="m" id="MHp-rW-7XP">
                                 <connections>
-                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                    <action selector="performMiniaturize:" target="-1" id="jXu-zw-5le"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Maximize" keyEquivalent="M" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="deminiaturize:" target="-1" id="qNa-he-45a"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Zoom" id="R4o-n2-Eq4">
@@ -671,6 +680,41 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem enabled="NO" id="a8S-pE-dvt">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" systemMenu="window" id="JvS-ha-oDS">
+                        <items>
+                            <menuItem title="Action" enabled="NO" keyEquivalent="a" id="zQI-fv-XXq">
+                                <connections>
+                                    <action selector="triggerActionWithSender:" target="dyB-DO-ksf" id="FO2-VR-RQb"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Minimize" enabled="NO" keyEquivalent="m" id="f95-87-EUj">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="a94-aO-fzP"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Maximize" enabled="NO" keyEquivalent="M" id="mXs-fY-XwB">
+                                <connections>
+                                    <action selector="deminiaturize:" target="-1" id="049-p6-83y"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" enabled="NO" id="Qev-2d-6fr">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="7cZ-2Q-jpU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="blu-qj-weI"/>
+                            <menuItem title="Bring All to Front" enabled="NO" id="vWd-j6-9kg">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="Ul2-Dd-IM9"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -691,7 +735,7 @@
             </items>
             <point key="canvasLocation" x="14" y="146"/>
         </menu>
-        <window title="FakeMail" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="QvC-M9-y7g">
+        <window title="FakeMail" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="QvC-M9-y7g" customClass="MailWindow" customModule="FakeMail" customModuleProvider="target">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="820" height="360"/>
@@ -776,7 +820,7 @@
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-7v-me7">
                                                                             <rect key="frame" x="26" y="12" width="220" height="59"/>
                                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                            <textFieldCell key="cell" selectable="YES" title="Die Knospe im Schlaz" id="qfZ-DP-RFl">
+                                                                            <textFieldCell key="cell" selectable="YES" title="Die Knospe im Schlafzimmer wieder beglücken" id="qfZ-DP-RFl">
                                                                                 <font key="font" usesAppearanceFont="YES"/>
                                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -836,18 +880,56 @@
                             <real value="250"/>
                         </holdingPriorities>
                     </splitView>
-                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wZ-wI-FGj">
-                        <rect key="frame" x="0.0" y="323" width="820" height="30"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Topbar" id="MPk-SM-hzr"/>
-                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-aF-R8X">
+                        <rect key="frame" x="50" y="319" width="64" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="Sent" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="tar-3P-PZ6">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <color key="contentTintColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                    </button>
                 </subviews>
             </view>
+            <connections>
+                <binding destination="4S3-pS-GCM" name="contentHeight" keyPath="values.windowContentHeight" id="Z7h-0X-Jmv"/>
+                <binding destination="4S3-pS-GCM" name="contentWidth" keyPath="values.windowContentWidth" previousBinding="Z7h-0X-Jmv" id="Ylr-f5-reB"/>
+            </connections>
             <point key="canvasLocation" x="127" y="-130"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="4S3-pS-GCM"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="ZDi-hy-j2j">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="213" y="227" width="583" height="424"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2048" height="1129"/>
+            <view key="contentView" id="fBd-vF-xJI">
+                <rect key="frame" x="0.0" y="0.0" width="583" height="424"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-jE-P5v">
+                        <rect key="frame" x="0.0" y="376" width="583" height="48"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="TopBarGradient" id="Vv9-B6-N2F"/>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZf-kr-VPl">
+                        <rect key="frame" x="80.5" y="389" width="48" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="SidebarSent19px" imagePosition="only" alignment="center" alternateImage="topBarBackground" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aUu-qZ-Wi1">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="-300" y="-240"/>
         </window>
     </objects>
     <resources>
         <image name="NSUserAccounts" width="32" height="32"/>
-        <image name="Topbar" width="512" height="30"/>
+        <image name="Sent" width="24" height="24"/>
+        <image name="SidebarSent19px" width="24" height="24"/>
+        <image name="TopBarGradient" width="48" height="75"/>
+        <image name="topBarBackground" width="574.66668701171875" height="138"/>
     </resources>
 </document>

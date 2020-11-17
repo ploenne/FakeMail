@@ -13,6 +13,7 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
 
 	@IBOutlet var mailTableView: NSTableView!
 	@IBOutlet var mailContentView: WKWebView!
+	@IBOutlet var mailWindow: NSWindow!
 
 	override func awakeFromNib() {
 
@@ -23,10 +24,20 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
         super.viewDidLoad()
         // Do view setup here.
         
-        
-        
         self.mailTableView.reloadData()
-    }
+        
+        self.mailWindow.miniaturize(self)
+        
+	}
+    
+    
+    @IBAction func triggerAction(sender: Any) {
+    
+		self.mailWindow.deminiaturize(self)
+    
+    
+	}
+    
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return defaultMailContent.count

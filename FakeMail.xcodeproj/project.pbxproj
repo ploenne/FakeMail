@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F10E5B5254AAF1100BA13A7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F10E5B4254AAF1100BA13A7 /* WebKit.framework */; };
+		9F10E5BA254AB4E100BA13A7 /* FirstResponderD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F10E5B9254AB4E100BA13A7 /* FirstResponderD.swift */; };
+		9F78B6B6254D5DFF00267895 /* FirstResponderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F78B6B5254D5DFF00267895 /* FirstResponderView.swift */; };
 		9FA4DC4E254A061E00A2E734 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4DC4D254A061E00A2E734 /* MailViewController.swift */; };
 		9FA4DC5D254A065800A2E734 /* DefaultMailPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */; };
 		9FA4DC62254A084000A2E734 /* MailTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FA4DC61254A084000A2E734 /* MailTableCellView.xib */; };
@@ -19,6 +22,7 @@
 		9FCC59852549F3420081E5F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FCC59832549F3420081E5F8 /* MainMenu.xib */; };
 		9FCC59912549F3430081E5F8 /* FakeMailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC59902549F3430081E5F8 /* FakeMailTests.swift */; };
 		9FCC599C2549F3430081E5F8 /* FakeMailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCC599B2549F3430081E5F8 /* FakeMailUITests.swift */; };
+		9FCEC3E3254FEA93003D4FD0 /* MailWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCEC3E2254FEA93003D4FD0 /* MailWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F10E5B4254AAF1100BA13A7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9F10E5B9254AB4E100BA13A7 /* FirstResponderD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderD.swift; sourceTree = "<group>"; };
+		9F78B6B5254D5DFF00267895 /* FirstResponderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstResponderView.swift; sourceTree = "<group>"; };
 		9FA4DC4D254A061E00A2E734 /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultMailPosts.swift; path = FakeMail/DefaultMailPosts.swift; sourceTree = SOURCE_ROOT; };
 		9FA4DC61254A084000A2E734 /* MailTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailTableCellView.xib; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 		9FCC59972549F3430081E5F8 /* FakeMailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeMailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCC599B2549F3430081E5F8 /* FakeMailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMailUITests.swift; sourceTree = "<group>"; };
 		9FCC599D2549F3430081E5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FCEC3E2254FEA93003D4FD0 /* MailWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F10E5B5254AAF1100BA13A7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F10E5B3254AAF1100BA13A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F10E5B4254AAF1100BA13A7 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FA4DC6E254A163900A2E734 /* MailContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +120,7 @@
 				9FCC598F2549F3430081E5F8 /* FakeMailTests */,
 				9FCC599A2549F3430081E5F8 /* FakeMailUITests */,
 				9FCC597D2549F33F0081E5F8 /* Products */,
+				9F10E5B3254AAF1100BA13A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +146,9 @@
 				9FA4DC61254A084000A2E734 /* MailTableCellView.xib */,
 				9FA4DC66254A097D00A2E734 /* MailTableCellView.swift */,
 				9FA4DC52254A063A00A2E734 /* DefaultMailPosts.swift */,
+				9F10E5B9254AB4E100BA13A7 /* FirstResponderD.swift */,
+				9F78B6B5254D5DFF00267895 /* FirstResponderView.swift */,
+				9FCEC3E2254FEA93003D4FD0 /* MailWindow.swift */,
 			);
 			path = FakeMail;
 			sourceTree = "<group>";
@@ -213,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					9FCC597B2549F33F0081E5F8 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -285,7 +306,10 @@
 			files = (
 				9FA4DC67254A097D00A2E734 /* MailTableCellView.swift in Sources */,
 				9FA4DC5D254A065800A2E734 /* DefaultMailPosts.swift in Sources */,
+				9F78B6B6254D5DFF00267895 /* FirstResponderView.swift in Sources */,
 				9FCC59802549F33F0081E5F8 /* AppDelegate.swift in Sources */,
+				9F10E5BA254AB4E100BA13A7 /* FirstResponderD.swift in Sources */,
+				9FCEC3E3254FEA93003D4FD0 /* MailWindow.swift in Sources */,
 				9FA4DC4E254A061E00A2E734 /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +478,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FakeMail/FakeMail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XPVUL23A2V;
@@ -463,7 +488,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -476,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = FakeMail/FakeMail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XPVUL23A2V;
@@ -485,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.numeric-media.FakeMail";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
